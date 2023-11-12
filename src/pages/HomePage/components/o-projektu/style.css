@@ -13,25 +13,45 @@ body {
 h1,
 h2 {
   font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
 .project {
+  background-image: linear-gradient(rgb(225, 236, 248), rgb(201, 201, 201));
+  padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: auto;
-  padding: 2rem 0rem;
-  background-size: cover;
-  height: 80vh;
-  background-position: center;
+  flex-grow: 1;
 }
-
-
 
 .project__description {
   padding: 0.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+  max-height: 90%;
+  border: 2px solid rgb(201, 201, 201);
+  padding: 1.5rem;
+  border-radius: 5%;
+  background-color: rgb(225, 236, 248);
+}
 
+.project_photo_wedding {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 5%;
+  max-width: 22.5%;
+}
+
+.photo_description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  gap: 15px;
 }
