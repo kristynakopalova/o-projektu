@@ -2,13 +2,15 @@ import './style.css';
 export const ONas = ({ name, description, link, image }) => {
   return (
     <>
-      <h1>{name}</h1>
-      <h2>O mně:</h2>
-      <p>{description}</p>
-      <a href={link} target="_blank">
-        Odkaz na Github
-      </a>
-      <img src={image} alt={name} className="photo" />
+      <div className='profile'>
+        <h1 className='profile__name'>{name}</h1>
+        <h2 className='profile__about'>O mně:</h2>
+        <p className='profile__description'>{description}</p>
+        <img src={image} alt={name} className="profile__photo" />
+        <a href={link} target="_blank">
+          Odkaz na Github
+        </a>
+      </div>
     </>
   );
 };
